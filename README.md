@@ -10,23 +10,12 @@
 ### model
 
 - **Book.java** — модель книги: название, автор, жанр, год публикации, уникальный идентификатор.
-- **BookCategory.java** — перечисление возможных жанров (FICTION, NONFICTION, FANTASY, SCIENCE и т. д.).
-
-### repository
-
-- **BookRepository.java** — простой репозиторий для хранения книг (на коллекциях).
-    - `addBook(Book book)`
-    - `removeBook(String title)`
-    - `List<Book> getAllBooks()`
-    - `List<Book> findByTitle(String title)`
 
 ### service
 
 - **BookService.java** — бизнес-логика:
-    - Работа с репозиторием
-    - Поиск по нескольким критериям
-    - Предотвращение дубликатов
-    - Регистронезависимый поиск
+  - Хранение и работа с коллекцией Book
+  - Поиск по названию
 
 ### Main
 
