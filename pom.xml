@@ -7,7 +7,13 @@
     <groupId>mentorship.roadmap.library</groupId>
     <artifactId>Library</artifactId>
     <version>1.0-SNAPSHOT</version>
-
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.14.0</version>
+        </dependency>
+</dependencies>
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>

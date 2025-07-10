@@ -42,9 +42,9 @@ public class Main {
                         library.removeBook(titleToRemove);
                     }
                     case Commands.FIND -> {
-                        System.out.println("Enter title to search: ");
+                        System.out.println("Enter title/author/genre/year at space to search: ");
                         String searchTitle = scanner.nextLine();
-                        List<Book> results = library.searchByTitle(searchTitle);
+                        List<Book> results = library.deepSearch(searchTitle.split(" "));
                         results.forEach(System.out::println);
                     }
                     case Commands.LIST -> library.listBooks().forEach(System.out::println);
